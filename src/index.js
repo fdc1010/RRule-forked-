@@ -10,8 +10,8 @@ function computeRRule(str) {
     .all()
     .map((date) =>
       DateTime.fromJSDate(date)
-        .setZone("local", { keepLocalTime: true })
-        .toJSDate()
+        .setZone("America/Chicago", { keepLocalTime: true })
+        .toJSDate(),
     );
 
   return dates

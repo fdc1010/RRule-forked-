@@ -2,8 +2,12 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-      "name": "Install Dependencies",
-      "command": "pnpm install"
+      "command": "pnpm install",
+      "name": "p"
+    },
+    {
+      "command": "pnpm add tslib -D",
+      "name": "p"
     }
   ],
 
