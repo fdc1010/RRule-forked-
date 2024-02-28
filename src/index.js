@@ -9,9 +9,7 @@ function computeRRule(str) {
   dates = rrule
     .all()
     .map((date) =>
-      DateTime.fromJSDate(date)
-        .setZone("America/Chicago", { keepLocalTime: true })
-        .toJSDate(),
+      DateTime.fromJSDate(date).setZone("America/Chicago").toJSDate(),
     );
 
   return dates
